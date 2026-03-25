@@ -15,9 +15,11 @@ Install Tailwind
 - Firebase Setup
 - Deploying our APP to Production
 - Create SignUp user Account
-
-
-
+- Create SignIn user Account/user APi
+- Create Redux Store with userSlice 
+- Implemented Signout
+- Update profile 
+- Ftech Movies from TMDB
 ------------------------
 ##Feactures
 Login/SignIn/SignUp form
