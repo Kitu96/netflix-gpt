@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { addUser, removeUser } from "../utils/userSlice";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import { HEADER_LOGO, USER_ICON } from "../utils/constants";
 
 export default function Header() {
     const dispatch = useDispatch();
@@ -39,7 +40,7 @@ export default function Header() {
         <div className="absolute flex justify-between items-center px-8 py-3 bg-gradient-to-r from-black z-10 w-full">
             <img
                 className="w-30 h-20"
-                src="https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production_2026-02-12/consent/87b6a5c0-0104-4e96-a291-092c11350111/019ae4b5-d8fb-7693-90ba-7a61d24a8837/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png"
+                src={HEADER_LOGO}
                 alt="header-logo"
             />
             <div className="relative group">
@@ -47,7 +48,7 @@ export default function Header() {
                 <div className="flex items-center gap-2 cursor-pointer">
                     <img
                         className="w-10 h-10 rounded"
-                        src="https://occ-0-1492-3663.1.nflxso.net/dnm/api/v6/SO2HoVCx33X8phZh2pZZmQ4QgNY/AAAABS8sWFjSyj1zyfgcnGamqyJ1E2ZubZGo8dndCM_ipf_5UpmVlkuf8IXzQlmPZQqTMWNjWukESRdLkFGHnf7zbY3MJCO3r4s.png?r=229"
+                        src={USER_ICON}
                         alt="user-icon"
                     />
                 </div>

@@ -22,6 +22,7 @@ Install Tailwind
 - BugFix: SignUp user displayName and Profile picture Update
 - Bugfix: If user not logged In redirect to /browser to login page and Vice versa
 - Unsubscribed to the onAuthStateChanged callback
+- Add hardcoded values to the constant file(SRC=>utils=>constants.js)
 - Ftech Movies from TMDB
 ------------------------
 ##Feactures
