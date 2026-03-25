@@ -10,7 +10,7 @@ export default function Header() {
     const navigate = useNavigate();
 
     useEffect(()=>{
-    onAuthStateChanged(auth, (user) => {
+    const unsubscribe=onAuthStateChanged(auth, (user) => {
     if (user) {
     const {uid,email,displayName,photoUrl} = user;
     dispatch(addUser({uid:uid,email:email,displayName:displayName,photoUrl:photoUrl}))
@@ -20,6 +20,7 @@ export default function Header() {
     navigate("/");
     }
     });
+    return ()=>unsubscribe();
    },[])
 
 
