@@ -11,7 +11,7 @@ export default function MainContainer(){
   
    console.log(mainMovies);
     return(
-        <div>
+        <div className="relative w-screen h-screen">
             <VideoBackground movieId={id}/>
             <VideoTitle title={original_title} overview={overview}/>
         </div>
